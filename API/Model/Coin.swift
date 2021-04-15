@@ -12,15 +12,15 @@ import Foundation
 
 // MARK: - Coin
 public struct Coin: Codable {
-	let assetID: String
+	public let assetID: String
 	public let name: String?
 	let typeIsCrypto: Int
 	let dataStart, dataEnd, dataQuoteStart, dataQuoteEnd: String?
 	let dataOrderbookStart, dataOrderbookEnd, dataTradeStart, dataTradeEnd: String?
 	let dataSymbolsCount: Int
 	let volume1HrsUsd, volume1DayUsd, volume1MthUsd: Double
-	let priceUsd: Double?
-	let idIcon: String?
+	public let priceUsd: Double?
+	public let idIcon: String?
 
 	enum CodingKeys: String, CodingKey {
 		case assetID = "asset_id"

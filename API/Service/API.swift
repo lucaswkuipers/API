@@ -10,15 +10,17 @@ import UIKit
 import Alamofire
 
 
+public class APIConstants {
+	static let apiKey = "AD3C321C-D306-4391-84AD-573D38C149AB"
+}
 
 public class API {
 	
-	public static func requestCoinList() -> [Coin] {
+	public static func requestCoinList(assetId: String = "") -> [Coin] {
 		print("-- Initiating request for the coins list --")
-
+		
 		var coins = [Coin]()
-		let key = "AD3C321C-D306-4391-84AD-573D38C149AB"
-		let urlString = "https://rest.coinapi.io/v1/assets?apikey=\(key)"
+		let urlString = "https://rest.coinapi.io/v1/assets/\(assetId)?apikey=\(APIConstants.apiKey)"
 		
 		if let url = URL(string: urlString) {
 			print("☑️ Success on converting urlString to URL")

@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		57CA32033477D3F373463803 /* Pods_ExampleAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C7AB38AB3094E986E5CFAA0 /* Pods_ExampleAPITests.framework */; };
+		9D0CBA532628E5480016DA91 /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CBA512628E5480016DA91 /* CoinTableViewCell.swift */; };
+		9D0CBA542628E5480016DA91 /* CoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D0CBA522628E5480016DA91 /* CoinTableViewCell.xib */; };
 		9D78D5532628973A00DACF44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D78D5522628973A00DACF44 /* AppDelegate.swift */; };
 		9D78D5552628973A00DACF44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D78D5542628973A00DACF44 /* SceneDelegate.swift */; };
 		9D78D5572628973A00DACF44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D78D5562628973A00DACF44 /* ViewController.swift */; };
@@ -45,6 +47,8 @@
 		5FE5B6AACB70ED050B81AC18 /* Pods_ExampleAPI_ExampleAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleAPI_ExampleAPIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D75ED44EA2DD7322A0D13B0 /* Pods-ExampleAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleAPI.debug.xcconfig"; path = "Target Support Files/Pods-ExampleAPI/Pods-ExampleAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		9691D3FC73ECCD1B924A8E1A /* Pods-ExampleAPI-ExampleAPIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleAPI-ExampleAPIUITests.release.xcconfig"; path = "Target Support Files/Pods-ExampleAPI-ExampleAPIUITests/Pods-ExampleAPI-ExampleAPIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9D0CBA512628E5480016DA91 /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
+		9D0CBA522628E5480016DA91 /* CoinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinTableViewCell.xib; sourceTree = "<group>"; };
 		9D78D54F2628973A00DACF44 /* ExampleAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D78D5522628973A00DACF44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D78D5542628973A00DACF44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +107,6 @@
 				DB1BCD63D8A361692C44D156 /* Pods-ExampleAPITests.debug.xcconfig */,
 				5F5F794C644741454CB5F056 /* Pods-ExampleAPITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +143,8 @@
 				9D78D5602628973E00DACF44 /* LaunchScreen.storyboard */,
 				9D78D5632628973E00DACF44 /* Info.plist */,
 				9D78D55B2628973A00DACF44 /* ExampleAPI.xcdatamodeld */,
+				9D0CBA512628E5480016DA91 /* CoinTableViewCell.swift */,
+				9D0CBA522628E5480016DA91 /* CoinTableViewCell.xib */,
 			);
 			path = ExampleAPI;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 			files = (
 				9D78D5622628973E00DACF44 /* LaunchScreen.storyboard in Resources */,
 				9D78D55F2628973E00DACF44 /* Assets.xcassets in Resources */,
+				9D0CBA542628E5480016DA91 /* CoinTableViewCell.xib in Resources */,
 				9D78D55A2628973A00DACF44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +420,7 @@
 				9D78D55D2628973A00DACF44 /* ExampleAPI.xcdatamodeld in Sources */,
 				9D78D5532628973A00DACF44 /* AppDelegate.swift in Sources */,
 				9D78D5552628973A00DACF44 /* SceneDelegate.swift in Sources */,
+				9D0CBA532628E5480016DA91 /* CoinTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
