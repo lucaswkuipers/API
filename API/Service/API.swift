@@ -33,7 +33,7 @@ public class API {
 					coins = jsonCoins
 					print("✅ Coin list has been returned with a total of # \(coins.count) # coins")
 //					print(coins)
-					return coins
+					return coins.filter{$0.name != nil}
 				} else {
 					print("❌ Failed decoding json data based on [Coin].self")
 					print("data: \(data)")
@@ -51,7 +51,9 @@ public class API {
 	}
 }
 
-func print(_ coins: [Coin]) {
-	let names = coins.map {$0.name}
-	print(names)
+public func print(_ coins: [Coin]) {
+	let names = coins.map{$0.name!}
+	for name in names {
+		print(name)
+	}
 }
