@@ -33,6 +33,7 @@ class ViewController: UIViewController {
 	}
 	func fetchData(searchedCoinID: String = "") {
 		coins = API.requestCoinList(assetId: searchedCoinID)
+		tableView.reloadData()
 	}
 	func setupUI() {
 		totalCoinsLabel.text = "Total of coins: \(coins.count)"
